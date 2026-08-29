@@ -1,6 +1,13 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
+    <!-- =====================================================
+         CORE
+    ====================================================== -->
+
     <meta charset="UTF-8">
 
     <meta
@@ -10,12 +17,111 @@
 
     <meta
         name="description"
-        content="Nexo Café — conecte-se ao seu momento. Café, conforto e experiências em um só lugar."
+        content="Nexo Café — conecte-se ao seu momento. Café de qualidade, conforto e experiências em um só lugar."
     >
 
-    <meta name="theme-color" content="#2B1D17">
+    <meta
+        name="keywords"
+        content="Nexo Café, cafeteria, café, cappuccino, latte, cafeteria no Paraná, café artesanal"
+    >
 
-    <title>Nexo Café — Conecte-se ao seu momento</title>
+    <meta
+        name="author"
+        content="Nexo Café"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#2b1d17"
+    >
+
+    <meta
+        name="color-scheme"
+        content="light"
+    >
+
+    <title>
+        Nexo Café — Conecte-se ao seu momento
+    </title>
+
+
+    <!-- =====================================================
+         PWA
+    ====================================================== -->
+
+    <link
+        rel="manifest"
+        href="./manifest.json"
+    >
+
+    <link
+        rel="icon"
+        href="./favicon.svg"
+        type="image/svg+xml"
+    >
+
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:title"
+        content="Nexo Café — Conecte-se ao seu momento"
+    >
+
+    <meta
+        property="og:description"
+        content="Café de qualidade, ambiente confortável e experiências criadas para fazer você querer ficar mais um pouco."
+    >
+
+    <meta
+        property="og:locale"
+        content="pt_BR"
+    >
+
+    <!--
+        Quando tivermos a URL final do GitHub Pages,
+        adicionaremos:
+
+        og:url
+        og:image
+    -->
+
+
+    <!-- =====================================================
+         TWITTER / X
+    ====================================================== -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Nexo Café — Conecte-se ao seu momento"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Seu momento começa aqui."
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
 
     <link
         rel="preconnect"
@@ -29,43 +135,80 @@
     >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
         rel="stylesheet"
     >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
 
     <link
         rel="stylesheet"
-        href="css/style.css"
+        href="./css/style.css"
     >
+
 </head>
+
 
 <body>
 
-    <!-- ========================================
+    <!-- =====================================================
          HEADER
-    ========================================= -->
+    ====================================================== -->
 
     <header class="site-header">
 
-        <nav class="navbar">
+        <nav
+            class="navbar"
+            aria-label="Navegação principal"
+        >
 
-            <a href="#" class="brand">
-                <span class="brand-mark">N</span>
+            <a
+                href="./"
+                class="brand"
+                aria-label="Nexo Café — Página inicial"
+            >
+
+                <span
+                    class="brand-mark"
+                    aria-hidden="true"
+                >
+                    N
+                </span>
 
                 <span class="brand-name">
                     NEXO
-                    <small>CAFÉ</small>
+
+                    <small>
+                        CAFÉ
+                    </small>
                 </span>
+
             </a>
+
 
             <div class="nav-links">
 
-                <a href="#experiencia">Experiência</a>
-                <a href="#cardapio">Cardápio</a>
-                <a href="#nexo-plus">Nexo+</a>
-                <a href="#sobre">Sobre</a>
+                <a href="#experiencia">
+                    Experiência
+                </a>
+
+                <a href="#cardapio">
+                    Cardápio
+                </a>
+
+                <a href="#nexo-plus">
+                    Nexo+
+                </a>
+
+                <a href="#sobre">
+                    Sobre
+                </a>
 
             </div>
+
 
             <a
                 href="#cardapio"
@@ -74,14 +217,19 @@
                 Ver cardápio
             </a>
 
+
             <button
                 class="menu-button"
+                type="button"
                 aria-label="Abrir menu"
                 aria-expanded="false"
+                aria-controls="menu-principal"
             >
-                <span></span>
-                <span></span>
-                <span></span>
+
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+
             </button>
 
         </nav>
@@ -89,17 +237,32 @@
     </header>
 
 
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
     <main>
 
-        <!-- ========================================
+
+        <!-- =================================================
              HERO
-        ========================================= -->
+        ================================================== -->
 
-        <section class="hero">
+        <section
+            class="hero"
+            aria-labelledby="hero-title"
+        >
 
-            <div class="hero-background"></div>
+            <div
+                class="hero-background"
+                aria-hidden="true"
+            ></div>
 
-            <div class="hero-overlay"></div>
+            <div
+                class="hero-overlay"
+                aria-hidden="true"
+            ></div>
+
 
             <div class="hero-content">
 
@@ -107,16 +270,25 @@
                     CAFÉ • EXPERIÊNCIA • CONEXÃO
                 </p>
 
-                <h1>
+
+                <h1 id="hero-title">
+
                     Conecte-se<br>
-                    ao seu <em>momento.</em>
+
+                    ao seu
+                    <em>momento.</em>
+
                 </h1>
 
+
                 <p class="hero-description">
+
                     Café de qualidade, ambiente confortável
                     e experiências criadas para fazer você
                     querer ficar mais um pouco.
+
                 </p>
+
 
                 <div class="hero-actions">
 
@@ -124,9 +296,15 @@
                         href="#cardapio"
                         class="button button-primary"
                     >
+
                         Explorar cardápio
-                        <span>↗</span>
+
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+
                     </a>
+
 
                     <a
                         href="#experiencia"
@@ -139,19 +317,33 @@
 
             </div>
 
+
             <div class="hero-bottom">
 
-                <span>DESDE 2026</span>
+                <span>
+                    DESDE 2026
+                </span>
 
-                <span class="hero-line"></span>
+                <span
+                    class="hero-line"
+                    aria-hidden="true"
+                ></span>
 
-                <span>UM CAFÉ PARA CADA MOMENTO</span>
+                <span>
+                    UM CAFÉ PARA CADA MOMENTO
+                </span>
 
             </div>
 
-            <div class="scroll-indicator">
 
-                <span>SCROLL</span>
+            <div
+                class="scroll-indicator"
+                aria-hidden="true"
+            >
+
+                <span>
+                    SCROLL
+                </span>
 
                 <div class="scroll-line"></div>
 
@@ -160,26 +352,36 @@
         </section>
 
 
-        <!-- ========================================
-             MANIFESTO
-        ========================================= -->
+        <!-- =================================================
+             EXPERIÊNCIA
+        ================================================== -->
 
         <section
             id="experiencia"
             class="manifesto section"
+            aria-labelledby="experiencia-title"
         >
 
             <div class="section-label">
-                <span>01</span>
+
+                <span aria-hidden="true">
+                    01
+                </span>
+
                 A EXPERIÊNCIA NEXO
+
             </div>
+
 
             <div class="manifesto-content">
 
-                <h2>
+                <h2 id="experiencia-title">
+
                     Não é apenas<br>
                     <em>café.</em>
+
                 </h2>
+
 
                 <div class="manifesto-text">
 
@@ -203,15 +405,23 @@
 
             <div class="experience-grid">
 
+
                 <article class="experience-card">
 
-                    <span class="experience-number">01</span>
+                    <span class="experience-number">
+                        01
+                    </span>
 
-                    <div class="experience-icon">
+                    <div
+                        class="experience-icon"
+                        aria-hidden="true"
+                    >
                         ☕
                     </div>
 
-                    <h3>Pausa</h3>
+                    <h3>
+                        Pausa
+                    </h3>
 
                     <p>
                         Um café para desacelerar,
@@ -223,13 +433,20 @@
 
                 <article class="experience-card">
 
-                    <span class="experience-number">02</span>
+                    <span class="experience-number">
+                        02
+                    </span>
 
-                    <div class="experience-icon">
+                    <div
+                        class="experience-icon"
+                        aria-hidden="true"
+                    >
                         ◫
                     </div>
 
-                    <h3>Foco</h3>
+                    <h3>
+                        Foco
+                    </h3>
 
                     <p>
                         Wi-Fi, tomadas e um ambiente
@@ -241,13 +458,20 @@
 
                 <article class="experience-card">
 
-                    <span class="experience-number">03</span>
+                    <span class="experience-number">
+                        03
+                    </span>
 
-                    <div class="experience-icon">
+                    <div
+                        class="experience-icon"
+                        aria-hidden="true"
+                    >
                         ◌
                     </div>
 
-                    <h3>Conexão</h3>
+                    <h3>
+                        Conexão
+                    </h3>
 
                     <p>
                         Um lugar para conversar,
@@ -259,13 +483,20 @@
 
                 <article class="experience-card">
 
-                    <span class="experience-number">04</span>
+                    <span class="experience-number">
+                        04
+                    </span>
 
-                    <div class="experience-icon">
+                    <div
+                        class="experience-icon"
+                        aria-hidden="true"
+                    >
                         ✦
                     </div>
 
-                    <h3>Experiência</h3>
+                    <h3>
+                        Experiência
+                    </h3>
 
                     <p>
                         Produtos, ambiente e detalhes
@@ -279,50 +510,91 @@
         </section>
 
 
-        <!-- ========================================
+        <!-- =================================================
              PRODUTO DESTAQUE
-        ========================================= -->
+        ================================================== -->
 
-        <section class="signature section">
+        <section
+            class="signature section"
+            aria-labelledby="signature-title"
+        >
 
             <div class="signature-image">
 
-                <div class="signature-image-placeholder">
-                    <span>COLOQUE AQUI</span>
-                    <strong>FOTO DO NEXO<br>CAFE</strong>
+                <div
+                    class="signature-image-placeholder"
+                    role="img"
+                    aria-label="Imagem do Nexo Caramel Latte"
+                >
+
+                    <span>
+                        COLOQUE AQUI
+                    </span>
+
+                    <strong>
+                        FOTO DO NEXO<br>
+                        CAFÉ
+                    </strong>
+
                 </div>
 
             </div>
 
+
             <div class="signature-content">
 
                 <div class="section-label">
-                    <span>02</span>
+
+                    <span aria-hidden="true">
+                        02
+                    </span>
+
                     ASSINATURA NEXO
+
                 </div>
 
-                <h2>
+
+                <h2 id="signature-title">
+
                     Nexo<br>
                     <em>Caramel Latte.</em>
+
                 </h2>
 
+
                 <p class="signature-description">
+
                     Espresso intenso, leite vaporizado,
                     caramelo artesanal e uma camada
                     cremosa de espuma.
+
                 </p>
 
+
                 <div class="signature-price">
-                    <small>A PARTIR DE</small>
-                    <strong>R$ 13</strong>
+
+                    <small>
+                        A PARTIR DE
+                    </small>
+
+                    <strong>
+                        R$ 13
+                    </strong>
+
                 </div>
+
 
                 <a
                     href="#cardapio"
                     class="text-link"
                 >
+
                     Ver no cardápio
-                    <span>→</span>
+
+                    <span aria-hidden="true">
+                        →
+                    </span>
+
                 </a>
 
             </div>
@@ -330,26 +602,36 @@
         </section>
 
 
-        <!-- ========================================
+        <!-- =================================================
              CARDÁPIO
-        ========================================= -->
+        ================================================== -->
 
         <section
             id="cardapio"
             class="menu section"
+            aria-labelledby="cardapio-title"
         >
 
             <div class="section-heading">
 
                 <div class="section-label">
-                    <span>03</span>
+
+                    <span aria-hidden="true">
+                        03
+                    </span>
+
                     NOSSO CARDÁPIO
+
                 </div>
 
-                <h2>
+
+                <h2 id="cardapio-title">
+
                     Seu momento.<br>
                     Seu <em>café.</em>
+
                 </h2>
+
 
                 <p>
                     Opções pensadas para diferentes
@@ -359,46 +641,69 @@
             </div>
 
 
-            <div class="menu-filters">
+            <!-- FILTROS -->
+
+            <div
+                class="menu-filters"
+                role="group"
+                aria-label="Filtrar cardápio"
+            >
 
                 <button
                     class="filter-button active"
+                    type="button"
                     data-category="todos"
+                    aria-pressed="true"
                 >
                     Todos
                 </button>
 
+
                 <button
                     class="filter-button"
+                    type="button"
                     data-category="cafes"
+                    aria-pressed="false"
                 >
                     Cafés
                 </button>
 
+
                 <button
                     class="filter-button"
+                    type="button"
                     data-category="gelados"
+                    aria-pressed="false"
                 >
                     Gelados
                 </button>
 
+
                 <button
                     class="filter-button"
+                    type="button"
                     data-category="doces"
+                    aria-pressed="false"
                 >
                     Doces
                 </button>
 
+
                 <button
                     class="filter-button"
+                    type="button"
                     data-category="salgados"
+                    aria-pressed="false"
                 >
                     Salgados
                 </button>
 
+
                 <button
                     class="filter-button"
+                    type="button"
                     data-category="combos"
+                    aria-pressed="false"
                 >
                     Combos
                 </button>
@@ -406,31 +711,45 @@
             </div>
 
 
+            <!-- PRODUTOS -->
+
             <div class="menu-grid">
 
-                <!-- Café -->
 
                 <article
                     class="product-card"
                     data-category="cafes"
                 >
 
-                    <div class="product-image">
-                        <span>ESPRESSO</span>
+                    <div
+                        class="product-image"
+                        role="img"
+                        aria-label="Espresso"
+                    >
+                        <span>
+                            ESPRESSO
+                        </span>
                     </div>
+
 
                     <div class="product-info">
 
                         <div>
-                            <h3>Espresso</h3>
+
+                            <h3>
+                                Espresso
+                            </h3>
 
                             <p>
                                 Intenso, equilibrado
                                 e preparado na hora.
                             </p>
+
                         </div>
 
-                        <strong>R$ 5,50</strong>
+                        <strong>
+                            R$ 5,50
+                        </strong>
 
                     </div>
 
@@ -442,22 +761,35 @@
                     data-category="cafes"
                 >
 
-                    <div class="product-image">
-                        <span>CAPPUCCINO</span>
+                    <div
+                        class="product-image"
+                        role="img"
+                        aria-label="Cappuccino"
+                    >
+                        <span>
+                            CAPPUCCINO
+                        </span>
                     </div>
+
 
                     <div class="product-info">
 
                         <div>
-                            <h3>Cappuccino</h3>
+
+                            <h3>
+                                Cappuccino
+                            </h3>
 
                             <p>
                                 Espresso, leite vaporizado
                                 e espuma cremosa.
                             </p>
+
                         </div>
 
-                        <strong>R$ 10</strong>
+                        <strong>
+                            R$ 10
+                        </strong>
 
                     </div>
 
@@ -469,50 +801,74 @@
                     data-category="cafes"
                 >
 
-                    <div class="product-image">
-                        <span>LATTE</span>
+                    <div
+                        class="product-image"
+                        role="img"
+                        aria-label="Latte"
+                    >
+                        <span>
+                            LATTE
+                        </span>
                     </div>
+
 
                     <div class="product-info">
 
                         <div>
-                            <h3>Latte</h3>
+
+                            <h3>
+                                Latte
+                            </h3>
 
                             <p>
                                 Suave, cremoso e equilibrado.
                             </p>
+
                         </div>
 
-                        <strong>R$ 10,50</strong>
+                        <strong>
+                            R$ 10,50
+                        </strong>
 
                     </div>
 
                 </article>
 
 
-                <!-- Gelados -->
-
                 <article
                     class="product-card"
                     data-category="gelados"
                 >
 
-                    <div class="product-image">
-                        <span>ICED MOCHA</span>
+                    <div
+                        class="product-image"
+                        role="img"
+                        aria-label="Iced Mocha"
+                    >
+                        <span>
+                            ICED MOCHA
+                        </span>
                     </div>
+
 
                     <div class="product-info">
 
                         <div>
-                            <h3>Iced Mocha</h3>
+
+                            <h3>
+                                Iced Mocha
+                            </h3>
 
                             <p>
                                 Café, chocolate, leite
                                 e gelo.
                             </p>
+
                         </div>
 
-                        <strong>R$ 14</strong>
+                        <strong>
+                            R$ 14
+                        </strong>
 
                     </div>
 
@@ -524,51 +880,75 @@
                     data-category="gelados"
                 >
 
-                    <div class="product-image">
-                        <span>ICED LATTE</span>
+                    <div
+                        class="product-image"
+                        role="img"
+                        aria-label="Iced Latte"
+                    >
+                        <span>
+                            ICED LATTE
+                        </span>
                     </div>
+
 
                     <div class="product-info">
 
                         <div>
-                            <h3>Iced Latte</h3>
+
+                            <h3>
+                                Iced Latte
+                            </h3>
 
                             <p>
                                 Espresso, leite gelado
                                 e gelo.
                             </p>
+
                         </div>
 
-                        <strong>R$ 12</strong>
+                        <strong>
+                            R$ 12
+                        </strong>
 
                     </div>
 
                 </article>
 
 
-                <!-- Doces -->
-
                 <article
                     class="product-card"
                     data-category="doces"
                 >
 
-                    <div class="product-image">
-                        <span>BROWNIE</span>
+                    <div
+                        class="product-image"
+                        role="img"
+                        aria-label="Brownie"
+                    >
+                        <span>
+                            BROWNIE
+                        </span>
                     </div>
+
 
                     <div class="product-info">
 
                         <div>
-                            <h3>Brownie</h3>
+
+                            <h3>
+                                Brownie
+                            </h3>
 
                             <p>
                                 Chocolate intenso
                                 com textura macia.
                             </p>
+
                         </div>
 
-                        <strong>R$ 9</strong>
+                        <strong>
+                            R$ 9
+                        </strong>
 
                     </div>
 
@@ -580,78 +960,113 @@
                     data-category="doces"
                 >
 
-                    <div class="product-image">
-                        <span>COOKIE</span>
+                    <div
+                        class="product-image"
+                        role="img"
+                        aria-label="Cookie artesanal"
+                    >
+                        <span>
+                            COOKIE
+                        </span>
                     </div>
+
 
                     <div class="product-info">
 
                         <div>
-                            <h3>Cookie artesanal</h3>
+
+                            <h3>
+                                Cookie artesanal
+                            </h3>
 
                             <p>
                                 Crocante por fora,
                                 macio por dentro.
                             </p>
+
                         </div>
 
-                        <strong>R$ 7</strong>
+                        <strong>
+                            R$ 7
+                        </strong>
 
                     </div>
 
                 </article>
 
-
-                <!-- Salgados -->
 
                 <article
                     class="product-card"
                     data-category="salgados"
                 >
 
-                    <div class="product-image">
-                        <span>CROISSANT</span>
+                    <div
+                        class="product-image"
+                        role="img"
+                        aria-label="Croissant"
+                    >
+                        <span>
+                            CROISSANT
+                        </span>
                     </div>
+
 
                     <div class="product-info">
 
                         <div>
-                            <h3>Croissant</h3>
+
+                            <h3>
+                                Croissant
+                            </h3>
 
                             <p>
                                 Massa leve e crocante.
                             </p>
+
                         </div>
 
-                        <strong>R$ 10</strong>
+                        <strong>
+                            R$ 10
+                        </strong>
 
                     </div>
 
                 </article>
 
-
-                <!-- Combo -->
 
                 <article
                     class="product-card featured"
                     data-category="combos"
                 >
 
-                    <div class="product-image">
-                        <span>COMBO ESTUDANTE</span>
+                    <div
+                        class="product-image"
+                        role="img"
+                        aria-label="Combo estudante"
+                    >
+                        <span>
+                            COMBO ESTUDANTE
+                        </span>
                     </div>
+
 
                     <div class="product-info">
 
                         <div>
-                            <h3>Combo Estudante</h3>
+
+                            <h3>
+                                Combo Estudante
+                            </h3>
 
                             <p>
                                 Café + salgado + cookie.
                             </p>
+
                         </div>
 
-                        <strong>R$ 20</strong>
+                        <strong>
+                            R$ 20
+                        </strong>
 
                     </div>
 
@@ -662,113 +1077,152 @@
         </section>
 
 
-        <!-- ========================================
+        <!-- =================================================
              NEXO SPACE
-        ========================================= -->
+        ================================================== -->
 
-        <section class="space section">
+        <section
+            class="space section"
+            aria-labelledby="space-title"
+        >
 
             <div class="space-content">
 
-                <div class="section-label">
-                    <span>04</span>
-                    NEXO SPACE
+                <div>
+
+                    <div class="section-label">
+
+                        <span aria-hidden="true">
+                            04
+                        </span>
+
+                        NEXO SPACE
+
+                    </div>
+
+                    <h2 id="space-title">
+
+                        Fique à vontade.<br>
+                        <em>O espaço é seu.</em>
+
+                    </h2>
+
+                    <p>
+
+                        Criamos diferentes ambientes para que
+                        você possa escolher como quer viver
+                        o seu momento.
+
+                    </p>
+
                 </div>
-
-                <h2>
-                    Fique à vontade.<br>
-                    <em>O espaço é seu.</em>
-                </h2>
-
-                <p>
-                    Criamos diferentes ambientes para que
-                    você possa escolher como quer viver
-                    o seu momento.
-                </p>
 
             </div>
 
 
             <div class="space-zones">
 
-                <div class="space-zone">
 
-                    <span>01</span>
+                <article class="space-zone">
 
-                    <h3>Quick</h3>
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Quick
+                    </h3>
 
                     <p>
                         Para quem está de passagem
                         e precisa de praticidade.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="space-zone">
+                <article class="space-zone">
 
-                    <span>02</span>
+                    <span>
+                        02
+                    </span>
 
-                    <h3>Focus</h3>
+                    <h3>
+                        Focus
+                    </h3>
 
                     <p>
                         Wi-Fi e tomadas para estudar
                         ou trabalhar com conforto.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="space-zone">
+                <article class="space-zone">
 
-                    <span>03</span>
+                    <span>
+                        03
+                    </span>
 
-                    <h3>Social</h3>
+                    <h3>
+                        Social
+                    </h3>
 
                     <p>
                         Mesas para conversar,
                         compartilhar e aproveitar.
                     </p>
 
-                </div>
+                </article>
 
 
-                <div class="space-zone">
+                <article class="space-zone">
 
-                    <span>04</span>
+                    <span>
+                        04
+                    </span>
 
-                    <h3>Spot</h3>
+                    <h3>
+                        Spot
+                    </h3>
 
                     <p>
                         Nosso espaço pensado
                         para suas melhores fotos.
                     </p>
 
-                </div>
+                </article>
 
             </div>
 
         </section>
 
 
-        <!-- ========================================
+        <!-- =================================================
              NEXO+
-        ========================================= -->
+        ================================================== -->
 
         <section
             id="nexo-plus"
             class="loyalty section"
+            aria-labelledby="loyalty-title"
         >
 
             <div class="loyalty-card">
 
                 <div class="loyalty-top">
 
-                    <span>NEXO+</span>
+                    <span>
+                        NEXO+
+                    </span>
 
-                    <span>MEMBERSHIP</span>
+                    <span>
+                        MEMBERSHIP
+                    </span>
 
                 </div>
+
 
                 <div class="loyalty-main">
 
@@ -777,9 +1231,17 @@
                         mais o Nexo devolve.
                     </p>
 
+
                     <div class="loyalty-points">
-                        <strong>10</strong>
-                        <span>PONTOS</span>
+
+                        <strong>
+                            10
+                        </strong>
+
+                        <span>
+                            PONTOS
+                        </span>
+
                     </div>
 
                 </div>
@@ -790,39 +1252,84 @@
             <div class="loyalty-content">
 
                 <div class="section-label">
-                    <span>05</span>
+
+                    <span aria-hidden="true">
+                        05
+                    </span>
+
                     NEXO+
+
                 </div>
 
-                <h2>
+
+                <h2 id="loyalty-title">
+
                     Volte.<br>
                     <em>Ganhe mais.</em>
+
                 </h2>
 
+
                 <p>
+
                     Nosso programa de fidelidade transforma
                     cada visita em pontos e cada ponto
                     em benefícios.
+
                 </p>
+
 
                 <div class="loyalty-rewards">
 
-                    <div>
-                        <strong>10</strong>
-                        <span>pontos</span>
-                        <small>1 bebida grátis</small>
-                    </div>
 
                     <div>
-                        <strong>20</strong>
-                        <span>pontos</span>
-                        <small>1 combo grátis</small>
+
+                        <strong>
+                            10
+                        </strong>
+
+                        <span>
+                            pontos
+                        </span>
+
+                        <small>
+                            1 bebida grátis
+                        </small>
+
                     </div>
 
+
                     <div>
-                        <strong>30</strong>
-                        <span>pontos</span>
-                        <small>benefício exclusivo</small>
+
+                        <strong>
+                            20
+                        </strong>
+
+                        <span>
+                            pontos
+                        </span>
+
+                        <small>
+                            1 combo grátis
+                        </small>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            30
+                        </strong>
+
+                        <span>
+                            pontos
+                        </span>
+
+                        <small>
+                            benefício exclusivo
+                        </small>
+
                     </div>
 
                 </div>
@@ -832,11 +1339,14 @@
         </section>
 
 
-        <!-- ========================================
+        <!-- =================================================
              CAMPANHA
-        ========================================= -->
+        ================================================== -->
 
-        <section class="campaign section">
+        <section
+            class="campaign section"
+            aria-labelledby="campaign-title"
+        >
 
             <div class="campaign-inner">
 
@@ -844,23 +1354,35 @@
                     INAUGURAÇÃO NEXO
                 </p>
 
-                <h2>
+
+                <h2 id="campaign-title">
+
                     O primeiro encontro<br>
                     é por nossa <em>conta.</em>
+
                 </h2>
 
+
                 <p>
+
                     Durante a semana de inauguração,
                     publique uma foto no Nexo, marque
                     nosso perfil e ganhe um espresso.
+
                 </p>
 
+
                 <a
-                    href="#"
+                    href="#cardapio"
                     class="button button-light"
                 >
+
                     Quero conhecer
-                    <span>↗</span>
+
+                    <span aria-hidden="true">
+                        ↗
+                    </span>
+
                 </a>
 
             </div>
@@ -868,40 +1390,55 @@
         </section>
 
 
-        <!-- ========================================
+        <!-- =================================================
              SOBRE
-        ========================================= -->
+        ================================================== -->
 
         <section
             id="sobre"
             class="about section"
+            aria-labelledby="sobre-title"
         >
 
             <div class="section-label">
-                <span>06</span>
+
+                <span aria-hidden="true">
+                    06
+                </span>
+
                 SOBRE O NEXO
+
             </div>
+
 
             <div class="about-content">
 
-                <h2>
+                <h2 id="sobre-title">
+
                     Um lugar para<br>
                     <em>estar presente.</em>
+
                 </h2>
+
 
                 <div class="about-text">
 
                     <p>
+
                         O Nexo Café nasceu da ideia de que
                         uma cafeteria pode ser muito mais
                         do que um lugar para comprar uma bebida.
+
                     </p>
 
+
                     <p>
+
                         Queremos criar um ponto de encontro
                         onde diferentes pessoas possam viver
                         diferentes momentos — sempre com um
                         bom café por perto.
+
                     </p>
 
                 </div>
@@ -911,52 +1448,90 @@
         </section>
 
 
-        <!-- ========================================
+        <!-- =================================================
              LOCALIZAÇÃO
-        ========================================= -->
+        ================================================== -->
 
-        <section class="location section">
+        <section
+            class="location section"
+            aria-labelledby="location-title"
+        >
 
             <div class="location-info">
 
                 <div class="section-label">
-                    <span>07</span>
+
+                    <span aria-hidden="true">
+                        07
+                    </span>
+
                     VENHA NOS ENCONTRAR
+
                 </div>
 
-                <h2>
+
+                <h2 id="location-title">
+
                     Seu próximo<br>
                     <em>momento.</em>
+
                 </h2>
+
 
                 <div class="location-details">
 
+
                     <div>
-                        <span>📍</span>
+
+                        <span aria-hidden="true">
+                            📍
+                        </span>
 
                         <p>
+
                             Centro<br>
                             Sua cidade — PR
+
                         </p>
+
                     </div>
 
+
                     <div>
-                        <span>◷</span>
+
+                        <span aria-hidden="true">
+                            ◷
+                        </span>
 
                         <p>
+
                             Segunda a sábado<br>
                             08:00 — 20:00
+
                         </p>
+
                     </div>
 
                 </div>
+
+
+                <!--
+                    Substituir pelo Google Maps quando
+                    a localização fictícia for definida.
+                -->
 
                 <a
                     href="#"
                     class="text-link"
+                    aria-label="Ver localização do Nexo Café no mapa"
                 >
+
                     Como chegar
-                    <span>→</span>
+
+                    <span aria-hidden="true">
+                        →
+                    </span>
+
                 </a>
 
             </div>
@@ -964,13 +1539,21 @@
 
             <div class="location-map">
 
-                <div class="map-placeholder">
+                <div
+                    class="map-placeholder"
+                    role="img"
+                    aria-label="Mapa indicando a localização do Nexo Café"
+                >
 
-                    <span>MAPA</span>
+                    <span>
+                        MAPA
+                    </span>
 
                     <strong>
+
                         LOCALIZAÇÃO<br>
                         DO NEXO
+
                     </strong>
 
                 </div>
@@ -982,21 +1565,30 @@
     </main>
 
 
-    <!-- ========================================
+    <!-- =====================================================
          FOOTER
-    ========================================= -->
+    ====================================================== -->
 
     <footer class="site-footer">
 
         <div class="footer-main">
 
+
             <div class="footer-brand">
 
-                <span class="brand-mark">N</span>
+                <span
+                    class="brand-mark"
+                    aria-hidden="true"
+                >
+                    N
+                </span>
+
 
                 <div>
 
-                    <strong>NEXO CAFÉ</strong>
+                    <strong>
+                        NEXO CAFÉ
+                    </strong>
 
                     <p>
                         Conecte-se ao seu momento.
@@ -1009,25 +1601,54 @@
 
             <div class="footer-links">
 
+
                 <div>
 
-                    <span>NAVEGAR</span>
+                    <span>
+                        NAVEGAR
+                    </span>
 
-                    <a href="#experiencia">Experiência</a>
-                    <a href="#cardapio">Cardápio</a>
-                    <a href="#nexo-plus">Nexo+</a>
-                    <a href="#sobre">Sobre</a>
+                    <a href="#experiencia">
+                        Experiência
+                    </a>
+
+                    <a href="#cardapio">
+                        Cardápio
+                    </a>
+
+                    <a href="#nexo-plus">
+                        Nexo+
+                    </a>
+
+                    <a href="#sobre">
+                        Sobre
+                    </a>
 
                 </div>
 
 
                 <div>
 
-                    <span>SOCIAL</span>
+                    <span>
+                        SOCIAL
+                    </span>
 
-                    <a href="#">Instagram</a>
-                    <a href="#">TikTok</a>
-                    <a href="#">WhatsApp</a>
+                    <!--
+                        Substituir pelos perfis reais/fictícios
+                        quando definidos.
+                    -->
+
+                    <a href="#">
+                        Instagram
+                    </a>
+
+                    <a href="#">
+                        TikTok
+                    </a>
+
+                    <a href="#">
+                        WhatsApp
+                    </a>
 
                 </div>
 
@@ -1051,7 +1672,71 @@
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <!-- =====================================================
+         NOSCRIPT
+    ====================================================== -->
+
+    <noscript>
+
+        <div
+            style="
+                padding:16px;
+                background:#2b1d17;
+                color:#fffaf3;
+                text-align:center;
+                font-family:sans-serif;
+            "
+        >
+
+            Para aproveitar todas as funcionalidades
+            do Nexo Café, recomendamos ativar o JavaScript.
+
+        </div>
+
+    </noscript>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        src="./js/script.js"
+        defer
+    ></script>
+
+
+    <!-- =====================================================
+         SERVICE WORKER / PWA
+    ====================================================== -->
+
+    <script>
+
+        if ("serviceWorker" in navigator) {
+
+            window.addEventListener(
+                "load",
+                () => {
+
+                    navigator.serviceWorker
+                        .register("./service-worker.js")
+                        .catch(error => {
+
+                            console.warn(
+                                "Nexo Café — Service Worker:",
+                                error
+                            );
+
+                        });
+
+                }
+            );
+
+        }
+
+    </script>
 
 </body>
+
 </html>
+```
