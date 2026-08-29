@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -17,12 +16,7 @@
 
     <meta
         name="description"
-        content="Nexo Café — conecte-se ao seu momento. Café de qualidade, conforto e experiências em um só lugar."
-    >
-
-    <meta
-        name="keywords"
-        content="Nexo Café, cafeteria, café, cappuccino, latte, cafeteria no Paraná, café artesanal"
+        content="Nexo Café — café de qualidade, conforto e experiências para estudar, trabalhar, conversar ou simplesmente aproveitar o momento."
     >
 
     <meta
@@ -42,7 +36,7 @@
 
     <meta
         name="color-scheme"
-        content="light"
+        content="dark light"
     >
 
     <title>
@@ -51,18 +45,33 @@
 
 
     <!-- =====================================================
-         PWA
+         CANONICAL
     ====================================================== -->
 
+    <!--
+        Depois de publicar no GitHub Pages,
+        troque pelo endereço definitivo.
+    -->
+
     <link
-        rel="manifest"
-        href="./manifest.json"
+        rel="canonical"
+        href="./"
     >
+
+
+    <!-- =====================================================
+         FAVICON / PWA
+    ====================================================== -->
 
     <link
         rel="icon"
         href="./favicon.svg"
         type="image/svg+xml"
+    >
+
+    <link
+        rel="manifest"
+        href="./manifest.json"
     >
 
 
@@ -76,26 +85,28 @@
     >
 
     <meta
+        property="og:locale"
+        content="pt_BR"
+    >
+
+    <meta
         property="og:title"
         content="Nexo Café — Conecte-se ao seu momento"
     >
 
     <meta
         property="og:description"
-        content="Café de qualidade, ambiente confortável e experiências criadas para fazer você querer ficar mais um pouco."
-    >
-
-    <meta
-        property="og:locale"
-        content="pt_BR"
+        content="Um café para cada momento. Conheça o Nexo Café."
     >
 
     <!--
-        Quando tivermos a URL final do GitHub Pages,
-        adicionaremos:
+        Adicionar quando houver domínio definitivo:
 
-        og:url
-        og:image
+        <meta property="og:url"
+              content="https://SEU-USUARIO.github.io/Nexo-Cafe/">
+
+        <meta property="og:image"
+              content="https://SEU-USUARIO.github.io/Nexo-Cafe/assets/images/og.jpg">
     -->
 
 
@@ -115,12 +126,12 @@
 
     <meta
         name="twitter:description"
-        content="Seu momento começa aqui."
+        content="Café, conforto e conexão em um só lugar."
     >
 
 
     <!-- =====================================================
-         GOOGLE FONTS
+         FONTS
     ====================================================== -->
 
     <link
@@ -154,6 +165,7 @@
 
 <body>
 
+
     <!-- =====================================================
          HEADER
     ====================================================== -->
@@ -168,7 +180,7 @@
             <a
                 href="./"
                 class="brand"
-                aria-label="Nexo Café — Página inicial"
+                aria-label="Nexo Café — página inicial"
             >
 
                 <span
@@ -179,20 +191,22 @@
                 </span>
 
                 <span class="brand-name">
+
                     NEXO
 
                     <small>
                         CAFÉ
                     </small>
+
                 </span>
 
             </a>
 
 
             <div
-    class="nav-links"
-    id="menu-principal"
->
+                class="nav-links"
+                id="menu-principal"
+            >
 
                 <a href="#experiencia">
                     Experiência
@@ -229,9 +243,9 @@
                 aria-controls="menu-principal"
             >
 
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+                <span></span>
+                <span></span>
+                <span></span>
 
             </button>
 
@@ -239,10 +253,6 @@
 
     </header>
 
-
-    <!-- =====================================================
-         MAIN
-    ====================================================== -->
 
     <main>
 
@@ -367,7 +377,7 @@
 
             <div class="section-label">
 
-                <span aria-hidden="true">
+                <span>
                     01
                 </span>
 
@@ -524,22 +534,14 @@
 
             <div class="signature-image">
 
-                <div
-                    class="signature-image-placeholder"
-                    role="img"
-                    aria-label="Imagem do Nexo Caramel Latte"
+                <img
+                    src="https://images.pexels.com/photos/17216082/pexels-photo-17216082.jpeg?auto=compress&cs=tinysrgb&w=1400"
+                    alt="Café servido com croissant em uma mesa de cafeteria"
+                    width="1400"
+                    height="933"
+                    loading="lazy"
+                    decoding="async"
                 >
-
-                    <span>
-                        COLOQUE AQUI
-                    </span>
-
-                    <strong>
-                        FOTO DO NEXO<br>
-                        CAFÉ
-                    </strong>
-
-                </div>
 
             </div>
 
@@ -548,7 +550,7 @@
 
                 <div class="section-label">
 
-                    <span aria-hidden="true">
+                    <span>
                         02
                     </span>
 
@@ -594,7 +596,7 @@
 
                     Ver no cardápio
 
-                    <span aria-hidden="true">
+                    <span>
                         →
                     </span>
 
@@ -619,7 +621,7 @@
 
                 <div class="section-label">
 
-                    <span aria-hidden="true">
+                    <span>
                         03
                     </span>
 
@@ -644,12 +646,10 @@
             </div>
 
 
-            <!-- FILTROS -->
-
             <div
                 class="menu-filters"
                 role="group"
-                aria-label="Filtrar cardápio"
+                aria-label="Categorias do cardápio"
             >
 
                 <button
@@ -661,7 +661,6 @@
                     Todos
                 </button>
 
-
                 <button
                     class="filter-button"
                     type="button"
@@ -670,7 +669,6 @@
                 >
                     Cafés
                 </button>
-
 
                 <button
                     class="filter-button"
@@ -681,7 +679,6 @@
                     Gelados
                 </button>
 
-
                 <button
                     class="filter-button"
                     type="button"
@@ -691,7 +688,6 @@
                     Doces
                 </button>
 
-
                 <button
                     class="filter-button"
                     type="button"
@@ -700,7 +696,6 @@
                 >
                     Salgados
                 </button>
-
 
                 <button
                     class="filter-button"
@@ -714,24 +709,27 @@
             </div>
 
 
-            <!-- PRODUTOS -->
-
             <div class="menu-grid">
 
+
+                <!-- ESPRESSO -->
 
                 <article
                     class="product-card"
                     data-category="cafes"
                 >
 
-                    <div
-                        class="product-image"
-                        role="img"
-                        aria-label="Espresso"
-                    >
-                        <span>
-                            ESPRESSO
-                        </span>
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=900"
+                            alt="Xícara de espresso"
+                            width="900"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
                     </div>
 
 
@@ -759,19 +757,24 @@
                 </article>
 
 
+                <!-- CAPPUCCINO -->
+
                 <article
                     class="product-card"
                     data-category="cafes"
                 >
 
-                    <div
-                        class="product-image"
-                        role="img"
-                        aria-label="Cappuccino"
-                    >
-                        <span>
-                            CAPPUCCINO
-                        </span>
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=900"
+                            alt="Cappuccino com espuma cremosa"
+                            width="900"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
                     </div>
 
 
@@ -799,19 +802,24 @@
                 </article>
 
 
+                <!-- LATTE -->
+
                 <article
                     class="product-card"
                     data-category="cafes"
                 >
 
-                    <div
-                        class="product-image"
-                        role="img"
-                        aria-label="Latte"
-                    >
-                        <span>
-                            LATTE
-                        </span>
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/317377/pexels-photo-317377.jpeg?auto=compress&cs=tinysrgb&w=900"
+                            alt="Latte servido em xícara"
+                            width="900"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
                     </div>
 
 
@@ -838,19 +846,24 @@
                 </article>
 
 
+                <!-- ICED MOCHA -->
+
                 <article
                     class="product-card"
                     data-category="gelados"
                 >
 
-                    <div
-                        class="product-image"
-                        role="img"
-                        aria-label="Iced Mocha"
-                    >
-                        <span>
-                            ICED MOCHA
-                        </span>
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/2615323/pexels-photo-2615323.jpeg?auto=compress&cs=tinysrgb&w=900"
+                            alt="Café gelado servido em copo"
+                            width="900"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
                     </div>
 
 
@@ -878,19 +891,24 @@
                 </article>
 
 
+                <!-- ICED LATTE -->
+
                 <article
                     class="product-card"
                     data-category="gelados"
                 >
 
-                    <div
-                        class="product-image"
-                        role="img"
-                        aria-label="Iced Latte"
-                    >
-                        <span>
-                            ICED LATTE
-                        </span>
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/1251175/pexels-photo-1251175.jpeg?auto=compress&cs=tinysrgb&w=900"
+                            alt="Iced latte"
+                            width="900"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
                     </div>
 
 
@@ -918,19 +936,24 @@
                 </article>
 
 
+                <!-- BROWNIE -->
+
                 <article
                     class="product-card"
                     data-category="doces"
                 >
 
-                    <div
-                        class="product-image"
-                        role="img"
-                        aria-label="Brownie"
-                    >
-                        <span>
-                            BROWNIE
-                        </span>
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/8318864/pexels-photo-8318864.jpeg?auto=compress&cs=tinysrgb&w=900"
+                            alt="Brownie e cookie artesanal"
+                            width="900"
+                            height="1200"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
                     </div>
 
 
@@ -958,19 +981,24 @@
                 </article>
 
 
+                <!-- COOKIE -->
+
                 <article
                     class="product-card"
                     data-category="doces"
                 >
 
-                    <div
-                        class="product-image"
-                        role="img"
-                        aria-label="Cookie artesanal"
-                    >
-                        <span>
-                            COOKIE
-                        </span>
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/3652/food-dessert-chocolate-sweet.jpg?auto=compress&cs=tinysrgb&w=900"
+                            alt="Cookies de chocolate"
+                            width="900"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
                     </div>
 
 
@@ -998,19 +1026,24 @@
                 </article>
 
 
+                <!-- CROISSANT -->
+
                 <article
                     class="product-card"
                     data-category="salgados"
                 >
 
-                    <div
-                        class="product-image"
-                        role="img"
-                        aria-label="Croissant"
-                    >
-                        <span>
-                            CROISSANT
-                        </span>
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/17216082/pexels-photo-17216082.jpeg?auto=compress&cs=tinysrgb&w=900"
+                            alt="Croissant servido com café"
+                            width="900"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
                     </div>
 
 
@@ -1037,19 +1070,24 @@
                 </article>
 
 
+                <!-- COMBO -->
+
                 <article
                     class="product-card featured"
                     data-category="combos"
                 >
 
-                    <div
-                        class="product-image"
-                        role="img"
-                        aria-label="Combo estudante"
-                    >
-                        <span>
-                            COMBO ESTUDANTE
-                        </span>
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/5018373/pexels-photo-5018373.jpeg?auto=compress&cs=tinysrgb&w=900"
+                            alt="Café e croissant servidos em cafeteria"
+                            width="900"
+                            height="600"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
                     </div>
 
 
@@ -1091,34 +1129,32 @@
 
             <div class="space-content">
 
-                <div>
+                <div class="section-label">
 
-                    <div class="section-label">
+                    <span>
+                        04
+                    </span>
 
-                        <span aria-hidden="true">
-                            04
-                        </span>
-
-                        NEXO SPACE
-
-                    </div>
-
-                    <h2 id="space-title">
-
-                        Fique à vontade.<br>
-                        <em>O espaço é seu.</em>
-
-                    </h2>
-
-                    <p>
-
-                        Criamos diferentes ambientes para que
-                        você possa escolher como quer viver
-                        o seu momento.
-
-                    </p>
+                    NEXO SPACE
 
                 </div>
+
+
+                <h2 id="space-title">
+
+                    Fique à vontade.<br>
+                    <em>O espaço é seu.</em>
+
+                </h2>
+
+
+                <p>
+
+                    Criamos diferentes ambientes para que
+                    você possa escolher como quer viver
+                    o seu momento.
+
+                </p>
 
             </div>
 
@@ -1256,7 +1292,7 @@
 
                 <div class="section-label">
 
-                    <span aria-hidden="true">
+                    <span>
                         05
                     </span>
 
@@ -1283,7 +1319,6 @@
 
 
                 <div class="loyalty-rewards">
-
 
                     <div>
 
@@ -1382,7 +1417,7 @@
 
                     Quero conhecer
 
-                    <span aria-hidden="true">
+                    <span>
                         ↗
                     </span>
 
@@ -1405,7 +1440,7 @@
 
             <div class="section-label">
 
-                <span aria-hidden="true">
+                <span>
                     06
                 </span>
 
@@ -1464,7 +1499,7 @@
 
                 <div class="section-label">
 
-                    <span aria-hidden="true">
+                    <span>
                         07
                     </span>
 
@@ -1518,21 +1553,19 @@
                 </div>
 
 
-                <!--
-                    Substituir pelo Google Maps quando
-                    a localização fictícia for definida.
-                -->
+                <!-- Pesquisa real no Google Maps -->
 
                 <a
-                    href="#"
+                    href="https://www.google.com/maps/search/?api=1&query=Nexo+Caf%C3%A9"
                     class="text-link"
-                    aria-label="Ver localização do Nexo Café no mapa"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
 
                     Como chegar
 
-                    <span aria-hidden="true">
-                        →
+                    <span>
+                        ↗
                     </span>
 
                 </a>
@@ -1542,21 +1575,14 @@
 
             <div class="location-map">
 
-                <div
-                    class="map-placeholder"
-                    role="img"
-                    aria-label="Mapa indicando a localização do Nexo Café"
-                >
+                <div class="map-placeholder">
 
                     <span>
-                        MAPA
+                        NEXO CAFÉ
                     </span>
 
                     <strong>
-
-                        LOCALIZAÇÃO<br>
-                        DO NEXO
-
+                        CENTRO
                     </strong>
 
                 </div>
@@ -1636,21 +1662,36 @@
                         SOCIAL
                     </span>
 
+
                     <!--
-                        Substituir pelos perfis reais/fictícios
-                        quando definidos.
+                        LINKS REAIS DE PESQUISA
+                        até vocês criarem as contas oficiais.
                     -->
 
-                    <a href="#">
-                        Instagram
+                    <a
+                        href="https://www.instagram.com/explore/search/keyword/?q=nexo%20cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Instagram ↗
                     </a>
 
-                    <a href="#">
-                        TikTok
+
+                    <a
+                        href="https://www.tiktok.com/search?q=nexo%20cafe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        TikTok ↗
                     </a>
 
-                    <a href="#">
-                        WhatsApp
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Nexo+Caf%C3%A9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Google Maps ↗
                     </a>
 
                 </div>
@@ -1676,30 +1717,6 @@
 
 
     <!-- =====================================================
-         NOSCRIPT
-    ====================================================== -->
-
-    <noscript>
-
-        <div
-            style="
-                padding:16px;
-                background:#2b1d17;
-                color:#fffaf3;
-                text-align:center;
-                font-family:sans-serif;
-            "
-        >
-
-            Para aproveitar todas as funcionalidades
-            do Nexo Café, recomendamos ativar o JavaScript.
-
-        </div>
-
-    </noscript>
-
-
-    <!-- =====================================================
          JAVASCRIPT
     ====================================================== -->
 
@@ -1710,7 +1727,7 @@
 
 
     <!-- =====================================================
-         SERVICE WORKER / PWA
+         SERVICE WORKER
     ====================================================== -->
 
     <script>
@@ -1739,7 +1756,7 @@
 
     </script>
 
+
 </body>
 
 </html>
-```
