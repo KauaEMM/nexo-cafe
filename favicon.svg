@@ -1,0 +1,34 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 100"
+>
+
+    <rect
+        width="100"
+        height="100"
+        rx="24"
+        fill="#2b1d17"
+    />
+
+    <circle
+        cx="50"
+        cy="50"
+        r="31"
+        fill="none"
+        stroke="#d59a62"
+        stroke-width="3"
+    />
+
+    <text
+        x="50"
+        y="63"
+        text-anchor="middle"
+        font-family="Georgia, serif"
+        font-size="43"
+        font-weight="bold"
+        fill="#fffaf3"
+    >
+        N
+    </text>
+
+</svg>
