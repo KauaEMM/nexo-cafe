@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://KauaEMM.github.io/Nexo-Cafe/sitemap.xml
